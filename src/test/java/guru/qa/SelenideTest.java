@@ -1,6 +1,7 @@
 package guru.qa;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
@@ -13,6 +14,7 @@ import static org.openqa.selenium.By.linkText;
 public class SelenideTest {
     @Test
     public void searchRepo() {
+        Configuration.remote = "http://localhost:4444/wd/hub";
         SelenideLogger.addListener("allure", new AllureSelenide());
         open("https://github.com");
         $(".header-search-input").click();

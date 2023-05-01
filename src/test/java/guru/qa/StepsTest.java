@@ -1,6 +1,7 @@
 package guru.qa;
 
 import com.codeborne.selenide.Condition;
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
@@ -18,6 +19,7 @@ public class StepsTest {
 
     @Test
     public void testLambdaStep() {
+        Configuration.remote = "http://localhost:4444/wd/hub";
         SelenideLogger.addListener("allure", new AllureSelenide());
 
         step("Открываем главную страницу", () -> {
@@ -41,6 +43,7 @@ public class StepsTest {
 
     @Test
     public void testAnnotatedStep() {
+        Configuration.remote = "http://localhost:4444/wd/hub";
         SelenideLogger.addListener("allure", new AllureSelenide());
         WebSteps webSteps = new WebSteps();
 

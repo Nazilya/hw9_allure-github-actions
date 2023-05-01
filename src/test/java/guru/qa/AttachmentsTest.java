@@ -1,5 +1,6 @@
 package guru.qa;
 
+import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.Test;
@@ -16,6 +17,7 @@ public class AttachmentsTest {
 
     @Test
     public void testLambdaAttachmentStep() {
+        Configuration.remote = "http://localhost:4444/wd/hub";
         SelenideLogger.addListener("allure", new AllureSelenide());
 
         step("Открываем главную страницу", () -> {
@@ -26,6 +28,7 @@ public class AttachmentsTest {
     }
     @Test
     public void testAnnotatedAttachmentStep() {
+        Configuration.remote = "http://localhost:4444/wd/hub";
         SelenideLogger.addListener("allure", new AllureSelenide());
         WebSteps webSteps = new WebSteps();
 
