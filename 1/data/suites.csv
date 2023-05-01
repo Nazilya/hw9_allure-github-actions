@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Mon May 01 16:58:37 GMT 2023","Mon May 01 16:58:37 GMT 2023","220","","guru.qa.StepsTest","","guru.qa.StepsTest","testAnnotatedStep","testAnnotatedStep()",""
+"broken","Mon May 01 16:58:28 GMT 2023","Mon May 01 16:58:36 GMT 2023","8424","","guru.qa.AttachmentsTest","","guru.qa.AttachmentsTest","testLambdaAttachmentStep","testLambdaAttachmentStep()",""
+"broken","Mon May 01 16:58:37 GMT 2023","Mon May 01 16:58:37 GMT 2023","222","","guru.qa.StepsTest","","guru.qa.StepsTest","testLambdaStep","testLambdaStep()",""
+"broken","Mon May 01 16:58:36 GMT 2023","Mon May 01 16:58:37 GMT 2023","358","","guru.qa.AttachmentsTest","","guru.qa.AttachmentsTest","testAnnotatedAttachmentStep","testAnnotatedAttachmentStep()",""
+"broken","Mon May 01 16:58:37 GMT 2023","Mon May 01 16:58:37 GMT 2023","264","","guru.qa.SelenideTest","","guru.qa.SelenideTest","searchRepo","searchRepo()",""
